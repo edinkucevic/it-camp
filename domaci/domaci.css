@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+
+}
+ .kocka {
+  background-color: coral;
+  width: 300px;
+  height: 300px;
+  margin-left: 450px;  
+  top: 200px;
+  bottom: 200px;
+  position: fixed;
+  
+ }
+ .krug1 {
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-color: blue;
+     position: fixed;
+     margin-left: 425px;
+     top: 175px;
+     bottom: 200px;
+ }
+ .krug2 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    margin-left: 425px;
+    bottom: 160px;
+ }
+ .krug3 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    position: fixed;
+    margin-left: 425px;
+    top: 325px;
+
+}
+.krug4 {
+    border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-color: black;
+     position: fixed;
+     margin-left: 725px;
+     top: 175px;
+     bottom: 200px;
+}
+.krug5 {
+    border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-color: purple;
+     position: fixed;
+     margin-left: 725px;
+     bottom: 160px;
+}
+.krug6 {
+    border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     background-color: orange;
+     position: fixed;
+     margin-left: 725px;
+     top: 325px;
+}
