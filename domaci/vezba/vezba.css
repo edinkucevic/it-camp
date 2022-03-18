@@ -6,54 +6,69 @@
     width: 100%;
     height: 100vh;
 }
- .nav {
-     width: 100%;
-     height: 10vh;
-     background-color: rgb(255, 255, 255);
- }
-.nav h3 {
-    padding-top: 10px;
-    padding-left: 20px;
-    font-weight: 700;
-    font-size: 30px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navigacija {
+   width: 100%;
+   height: 70px;
+   background-color: rgb(189, 189, 189);
+   display: inline-flex;
+
+}
+.navigacija h1 {
+    font-family: fantasy;
+}
+.navigacija h2 {
+    font-family: fantasy;
+    margin-top: 35px;
+    margin-left: -90px;
+    font-size: 25px;
+}
+.linkovi  {
+ display: inline-flex;
+ padding: 20px;
+ margin-left: 900px;
+
+}
+.linkovi a {
+    float: left;
+    padding: 15px;
+    color: black;
+    font-family: fantasy;
+    font-size: medium;
+    text-decoration: none;
+
 }
 .main {
-    background-color: royalblue;
+    background-color: rgb(185, 185, 185);    
     width: 100%;
     height: 40vh;
-    display: flex;
 }
 .main-sadrzaj {
-    width: 30%;
+    width: 50%;
 
 }
 .main-sadrzaj h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-size: 50px;
+    font-weight: 700;
+    font-family: fantasy;
+    padding-left: 10px;
+    padding-top: 20px;
 }
 .main-sadrzaj h1 span {
-   color:red;
-   text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
-.main-slika {
-    position: relative;
-    margin-left: 50%;
+.main-sadrzaj p {
+    font-family: fantasy;
+    width: 70%;
+    font-size: 17px;
+    padding-left: 10px;
 }
-.badge {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    border-radius: 50%;
-    top: -30px;
-    right: -50%;
-
-}
-.druga {
-    width: 100%;
-    height: 30vh;
-    
+.main-sadrzaj img {
+   position: relative;
+   margin-left: 150%;
+   margin-top: -300px;
+   z-index: 2;
+   
+   
+   
 }
