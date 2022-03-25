@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+}
+
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.linkovi {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px;
+    font-family:  "Raleway", sans-serif;
+    font-weight: 500;
+}
+a:hover {
+    color: red;
+    transition: 0.3s;
+    
+   
+}
+
+
+
+.ikonice {
+    display: flex;
+    padding-left: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.ikonice a:hover {
+    transform: rotateY(180deg);
+    transition: 0.8s;
+    
+    
+
+}
+
+
+.kocka-nav {
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+    padding: 0px;
+    width: 170px;
+    transition: 0.5s;
+
+    
+
+    
+}
+.kocka-nav a {
+    color: white;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.kocka-nav:hover {
+  background-color: rgb(158, 1, 1);
+  
+}
+
+
+
+
+.section-one {
+     width: 100%;
+     height: 800px;
+     background: url(./mainslikaa.jpeg) center  ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+.box1 {
+    width: 415px;
+    height: 430px;
+    background-color: #F02830;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 70px;
+    
+
+}
+
+.box1 h1 {
+    color:white;
+    font-size: 50px;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    margin-left: 40px;
+    padding-top: 70px;
+
+}
+
+.box1 div {
+    background-color: #F02830;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
+    margin-left: 40px;
+    margin-bottom: 70px;
+
+}
+ .box1 a {
+     color: white;
+     font-family: "Raleway" , sans-serif;
+     text-decoration: none;
+     
+ }
+
+ .box1 div:hover {
+     background-color: white;
+     transition: 0.5s;
+     
+ }
+
+ .box1 a:hover {
+     color: red;
+ }
+
+ .box2 {
+     width: 550px;
+     height: 430px;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: baseline;
+     
+ }
+ .box2 div {
+     margin-left: 40px;
+     justify-content: space-between;
+     flex-direction: column;
+     font-size: 16px;
+     width: 410px;
+     font-family:  "Raleway" , sans-serif;
+     font-weight: 300 normal;
+     color: #232F55;
+ }
+
+
+ .section-two {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ 
+.naslov  {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:center ;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 750;
+    font-size: 22px;
+    margin-top: 130px;
+    color: #232F55;
+}
+ 
+.boksovi {
+    width: 100%;
+    height: 315px;
+    margin-top: 60px; ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.boks1 {
+    width: 415px;
+    height: 290px;
+    background-image: url(./avion.jpeg);
+    background-size: cover;
+   
+}
+.boks2 {
+    width: 415px;
+    height: 290px;
+    background-image: url(./brod.jpeg);
+    background-size: cover;
+}
+.boks3 {
+    width: 415px;
+    height: 290px;
+    background-image: url(./kamion.jpeg);
+    background-size: cover;
+
+}
+.kartice-text {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.kartica1 {
+    width: 415px;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 200;
+}
+.kartica1 span {
+    color: red;
+}
+.kartica2 {
+    width: 415px;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 200;
+}
+.kartica2 span {
+    color: red;
+}
+
+.kartica3 {
+    width: 415px;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 200;
+}
+.kartica3 span {
+    color: red;
+}
+.kartica1 a {
+    color: #232F55;
+}
+.kartica2 a {
+    color: #232F55;
+}
+.kartica3 a {
+    color: #232F55;
+}
+.kartica1 p {
+    color: #232F55;
+    font-size: 18px;
+    font-weight: 300;
+}
+.kartica2 p {
+    color: #232F55;
+    font-size: 18px;
+    font-weight: 300;
+
+
+}
+.kartica3 p {
+    color: #232F55;
+    font-size: 18px;
+    font-weight: 300;
+
+
+}
+     
+     
+ 
+
+ 
+
+
+
+
+
+
+
