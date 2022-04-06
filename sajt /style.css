@@ -693,7 +693,14 @@ div.kolona2::before {
     height: 40px;
     margin-left: 70px;
     margin-top: 40px;
+    transition: 0.5s;
 
+}
+.footer-icon a:hover {
+ transform: rotateY(180deg);
+ transition: 0.5s ease-out;
+ color: white;
+ background-color: red;
 }
 .footer-icon a {
     color: #F02930;
