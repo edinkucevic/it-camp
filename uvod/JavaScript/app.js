@@ -87,3 +87,17 @@
 
 
 
+// const age = prompt("unesi svoje godine")
+
+// if (+age >= 18 && +age < 40) {
+//     console.log ("Odrastao si")
+// }
+// else if (+age > 11 && +age < 18) {
+//     console.log ("tinejdzer")
+// }
+// else  if (+age > 40) {
+//     console.log("covek")
+// }
+// else {
+//     console.log ("dete")
+// }
