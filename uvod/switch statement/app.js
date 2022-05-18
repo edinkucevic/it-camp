@@ -31,12 +31,12 @@
 
 
 
-if ("") {
-    console.log ("TACNA VREDNOST ILI TRUTHY")
+// if ("") {
+//     console.log ("TACNA VREDNOST ILI TRUTHY")
 
-} else {
-    console.log ("NETACNA VREDNOST ILI FALSY")
-}
+// } else {
+//     console.log ("NETACNA VREDNOST ILI FALSY")
+// }
 
 // true i false su tip podatka ili boolean
 // truthy i falsy su svi tipovi podataka
