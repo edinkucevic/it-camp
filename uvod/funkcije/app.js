@@ -41,7 +41,7 @@ function sabiraj(prvi,drugi,treci = false) {
     }
 
 }
-console.log(sabiraj(2,2,10))
+console.log(sabiraj(2,2,10,3))
 
 //  console.log(saberi(10 , 15))
 // const saberi = function(){

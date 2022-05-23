@@ -40,7 +40,7 @@
 
 // KONDICIONALI
 
-// consst age = 17
+// const age = 17
 
 // if (age >= 18) {       //if je glavni deo
 //     console.log ("punoletan si")  //u zagradi je uslov , u viticastoj je nesto da se odradi ili blok
