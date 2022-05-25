@@ -12,6 +12,7 @@ cars.unshift("Bentley")
 
 //brisanje prvog clana niza - shift
 cars.shift()
+cars.shift()
 
 //okrece niz naopako - reverse
 cars.reverse()
