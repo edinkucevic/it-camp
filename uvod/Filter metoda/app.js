@@ -70,3 +70,5 @@ const dogAgeToHuman = (ages) => {
      
 };
 console.log(dogAgeToHuman(DATA1))
+console.log(dogAgeToHuman(DATA1))
+
