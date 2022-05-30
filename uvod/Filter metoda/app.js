@@ -53,22 +53,52 @@
 
 // console.log (squareNumbers)
 
-const DATA1 = [1,3,4,2,7,6];
-// el > 2 = el * 7
-// el > 2 && el < 8 = (el*4) / 2
+// const DATA1 = [1,3,4,2,7,6];
+// // el > 2 = el * 7
+// // el > 2 && el < 8 = (el*4) / 2
 
-const dogAgeToHuman = (ages) => {
-    const humanAge = ages.map (age => {
-        if (age > 2 && age < 8) {
-            return (age * 4) / 2
-        } else if (age > 2) {
-            return age * 7
-        }
-    });
-    const lessThan10HumanAge = humanAge.filter ((el) => el < 10);
-    return lessThan10HumanAge;
+// const dogAgeToHuman = (ages) => {
+//     const humanAge = ages.map (age => {
+//         if (age > 2 && age < 8) {
+//             return (age * 4) / 2
+//         } else if (age > 2) {
+//             return age * 7
+//         }
+//     });
+//     const lessThan10HumanAge = humanAge.filter ((el) => el < 10);
+//     return lessThan10HumanAge;
      
-};
-console.log(dogAgeToHuman(DATA1))
-console.log(dogAgeToHuman(DATA1))
+// };
+// console.log(dogAgeToHuman(DATA1))
+// console.log(dogAgeToHuman(DATA1))
+
+
+
+// REDUCE FUNKCIJA 
+
+// const DATA = [26, 18, 16, 22, 30, 28];
+
+// const sumAvgAge = (ages) => {
+//     const getAverage = ages.reduce((previousValue , currentValue) => previousValue + currentValue) / ages.length; // .lenght je duzina niza ili broj clanova
+    
+//     return parseFloat(getAverage.toFixed(2)); //parseFloat prikazuje decimalni broj a parseInt prikazuje ceo broj
+
+
+// }
+
+// // const cartTotal = DATA.reduce(
+// //     (previousValue, currentValue) => previousValue + currentValue
+// // );
+
+
+// console.log(sumAvgAge(DATA))
+
+//numbers.every (el < 50) - bira da li su svi elemeti manji od 50 i vraca true ili false
+// numbers.some (el < 50) - bira samo jedan element manji od 50 i vraca true ili false
+
+const array1 = [1,2,3];
+console.log (array1.includes(5)) // trazi da li ima u nizu 5 i vraca false ako nema i trazi samo tacnu vrednost
+
+const elements = ["Fire" , "Air" , "Water", "Edin"];
+console.log (elements.join("|")) 
 
