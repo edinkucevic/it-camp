@@ -74,34 +74,69 @@
 
 
  
-const car = {
-    marka: "Bmw",
-    model: "M5",
-    maxBrzina: 330,
-    trenutnaBrzina: 0 ,
-    vozi:function(value) {
+// const car = {
+//     marka: "Bmw",
+//     model: "M5",
+//     maxBrzina: 330,
+//     trenutnaBrzina: 0 ,
+//     vozi:function(value) {
         
-        if (this.trenutnaBrzina + value > this.maxBrzina) {
-            alert ("Ne moze")
+//         if (this.trenutnaBrzina + value > this.maxBrzina) {
+//             alert ("Ne moze")
             
-        } else {
-            this.trenutnaBrzina += value;
-        }
+//         } else {
+//             this.trenutnaBrzina += value;
+//         }
         
-    },
+//     },
 
-    koci:function(value) {
+//     koci:function(value) {
         
-         this.trenutnaBrzina -= value
-    },
+//          this.trenutnaBrzina -= value
+//     },
 
-    stop: function(value) {
-         this.trenutnaBrzina = 0
-    },
+//     stop: function(value) {
+//          this.trenutnaBrzina = 0
+//     },
+// }
+
+// console.log(car)
+// car.vozi(280)
+// car.vozi(41)
+
+
+// const person = {
+//     name: "John Doe",
+//     age: 22,
+// };
+
+// const car = {
+//     name: "Audi",
+// };
+
+// function sayHello() {
+//     console.log(`Hello ${this.name}`);
+// }
+// sayHello.call(person)
+
+
+let hrana ={ food: "Pizza"};
+
+function favFood(text, rating) {
+    return `${this.food} ${text} ${rating}`;
 }
+console.log(favFood.call(hrana, "je ukusna", 9)); // PRVI ARGUMENT JE OBJEKAT ZA KOJI CEMO DA ZAKACIMO THIS i kaci se na funkciju
 
-console.log(car)
-car.vozi(280)
-car.vozi(41)
+console.log(favFood.apply(hrana, ["nije ukusna", 6])); // PRVI ARGUMENT JE OBJEKAT ZA KOJI CEMO DA ZAKACIMO THIS ( i ide u niz) i kaci se na funkciju
 
 
+
+const bindFunc = favFood.bind(hrana);   // BIND VRACA FUNKCIJU 
+
+console.log(bindFunc("nije nesto",9));
+
+const ime = "John Doe"
+const zanimanje = "ubica"
+const godine = 40
+
+console.log(`${ime} je ${zanimanje} i ima ${godine} godina`)
