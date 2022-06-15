@@ -24,27 +24,54 @@
 
 
 
-const students = [
-    { name: "Faris", grade: 8 , year: 2 },
-    { name: "Isko", grade: 10 , year: 4 },
-    { name: "Aldin", grade: 8 , year: 2 },
-    { name: "Amina", grade: 9 , year: 4 },
-    { name: "Sabina", grade: 9 , year: 3 },
-    { name: "Denis", grade: 7 , year: 4 },
-    { name: "Senad", grade: 6 , year: 1 },
+// const students = [
+//     { name: "Faris", grade: 8 , year: 2 },
+//     { name: "Isko", grade: 10 , year: 4 },
+//     { name: "Aldin", grade: 8 , year: 2 },
+//     { name: "Amina", grade: 9 , year: 4 },
+//     { name: "Sabina", grade: 9 , year: 3 },
+//     { name: "Denis", grade: 7 , year: 4 },
+//     { name: "Senad", grade: 6 , year: 1 },
 
-];
+// ];
 
-    function getAvgGrade(array) {
+//     function getAvgGrade(array) {
 
-        const ocene = array.map((el) => el.grade )
-        console.log(ocene)
+//         const ocene = array.map((el) => el.grade )
+//         console.log(ocene)
 
-        const avgGrade = ocene.reduce ((prevValue , curValue) => prevValue + curValue) / array.length
-        return avgGrade.toFixed(2) 
+//         const avgGrade = ocene.reduce ((prevValue , curValue) => prevValue + curValue) / array.length
+//         return avgGrade.toFixed(2) 
         
     
 
-    }
+//     }
 
-    console.log(getAvgGrade(students))
+//     console.log(getAvgGrade(students))
+
+
+
+
+// const person1 = {
+//     name: "John Doe",
+//     age: 48,
+//     job: "Employed",
+//     adress: "USA",
+//     kids: 4,
+// };
+// const person2= person1;
+
+// person1.name = "Edin"
+// console.log(person1)
+
+// console.log(Object.is(person1,person2))
+
+// // Object.seal(person) // kod seal moze da menjas postojeci ,ali ne mozes da dodajes i brises
+// Object.freeze(person) // ovo je funkcija koja zaledi objekt takav kakav jeste, ne moze da se doda ili menja nesto
+// Object.keys(person) // vraca sve  kljuceve tog objekta u niz
+
+
+
+// console.log(Object.keys(person))
+// console.log(Object.values(person)) // vraca sve vrednosti iz tog objekta
+
