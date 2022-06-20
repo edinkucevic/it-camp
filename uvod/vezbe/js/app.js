@@ -75,3 +75,75 @@
 // console.log(Object.keys(person))
 // console.log(Object.values(person)) // vraca sve vrednosti iz tog objekta
 
+
+// function arrayMap(arr, clback) {
+//     res = []
+//     for (let i = 0; i < arr.length; i++) { 
+//         newEl = clback(arr[i]);
+//         res.push(newEl)
+   
+//     }
+//     return res;
+
+// }
+
+// myfunc =  function (arg1) {
+//     return arg1 * 2;
+// };
+
+// niz = arrayMap([1, 2, 3, 4, 5], myfunc);
+
+
+// console.log(niz)
+
+// res = [1, 2, 3, 4, 5].map((el) =>{      
+//     if  (el >= 3) {
+//         return el;
+//     }
+// });
+
+
+// res2 = [1, 2, 3, 4, 5].filter((el) =>{
+//     if  (el >= 3) {
+//         return el;
+//     }
+// });
+
+// console.log(res);
+// console.log(res2)
+
+
+// console.log(1);
+// console.log(2);
+
+// func = () => {
+//     console.log(3);
+
+// }
+
+// setTimeout(func, 1000);
+
+// console.log(4);
+
+
+// posao = new Promise((resolve, reject) => {
+//     response = 200;
+    
+//     for (let i = 0 ; i < 900000000; i++) {}
+//     if (response === 200) {
+//         resolve([1,2,3,4,5]);
+    
+//     } else {
+//         reject(["GRESKA!!!"])
+//     }
+// });
+
+// posao.then((data) => {                       // THEN se koristi  ako je uspesan odgovor
+//     console.log("uspeo povukao podatke", data)
+// });
+
+// posao.catch((err) => {                  // CATCH se koristi ako je neuspesan odgovor
+//     console.log("neuspesno povukao podatke", err)
+// });
+
+
