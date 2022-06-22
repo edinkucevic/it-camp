@@ -146,4 +146,60 @@
 //     console.log("neuspesno povukao podatke", err)
 // });
 
+// for (let i = 0; i < 10; i++) {
+//    setTimeout(() => {
+//        console.log(i);  
+//     screen }, 0);
+    
+// }
 
+// for (var i = 0; i < 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);  
+//      screen }, 0);
+     
+//  }
+
+
+// function mojaFunc() {
+//     console.log("neke komande")
+// function drugaFunc() {
+//         console.log("drugaaa")
+//     }
+//     return drugaFunc;
+// }
+
+// mojaFunc()() // ispisi funkciju i  funkciju iz funkcije 
+
+// res = mojaFunc()
+
+// res();
+
+
+function mojaFunc() {
+a = 10
+
+function drugaFunc(arg1) {
+    console.log("druga");
+    console.log(arg1 + a);
+}
+return drugaFunc;
+}
+
+res = mojaFunc();
+
+res(5);
+
+
+function makeAdder(x) {
+    function innerFunc(y) {
+        return x + y;
+    }
+    return innerFunc
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10)
+
+console.log(add5(3));
+console.log(add10(23))
