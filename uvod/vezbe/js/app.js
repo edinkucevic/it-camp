@@ -176,30 +176,80 @@
 // res();
 
 
-function mojaFunc() {
-a = 10
+// function mojaFunc() {
+// a = 10
 
-function drugaFunc(arg1) {
-    console.log("druga");
-    console.log(arg1 + a);
-}
-return drugaFunc;
-}
+// function drugaFunc(arg1) {
+//     console.log("druga");
+//     console.log(arg1 + a);
+// }
+// return drugaFunc;
+// }
 
-res = mojaFunc();
+// res = mojaFunc();
 
-res(5);
+// res(5);
 
 
-function makeAdder(x) {
-    function innerFunc(y) {
-        return x + y;
-    }
-    return innerFunc
-}
+// function makeAdder(x) {
+//     function innerFunc(y) {
+//         return x + y;
+//     }
+//     return innerFunc
+// }
 
-var add5 = makeAdder(5);
-var add10 = makeAdder(10)
+// var add5 = makeAdder(5);
+// var add10 = makeAdder(10)
 
-console.log(add5(3));
-console.log(add10(23))
+// console.log(add5(3));
+// console.log(add10(23))
+
+
+
+// prom = new Promise((res,rej) => {
+//     res();
+// });
+
+// prom.then(() => {
+//     prom.then(()=> {
+//         console.log("B");
+//     });
+//     console.log("A");
+// });
+
+// prom.then(() => {
+//     console.log("C")
+// });
+
+
+
+// Fatch znaci prikupiti i odnosi se na prikupljanje podataka ..
+// API je veza izmedju frontend-a i backend-a.. Uvek se podaci dobijaju preko API
+
+//  QUERY PARAM(S) je znak ? u linku koji koristimo kada trazimo neki poseban komentar i koristi se jednom u linku,posle toga
+//  se koritsti & (AND)..
+
+// const getUsers = () => {
+//     fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
+//     .then((response) => response.json())
+//     .then ((res) => res.map((el) => el.Id));
+        
+//     };
+
+// console.log(getUsers());
+
+
+
+// ASYNC 
+// await mora da ide uvek na API
+// async vraca promise i pisemo .then na funkciju
+
+const BASE_URL = "https://jsonplaceholder.typicode.com"
+const getUsers = async () => {
+      const response = await fetch(`${BASE_URL}/users`); //da ne bi pisali ceo link..
+      const posts = await response.json();
+      return posts.map ((el) => {
+          return {ime: "Edin", id: el.id };
+      });
+};
+getUsers().then((res) => console.log(res));
