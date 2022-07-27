@@ -1,0 +1,12 @@
+.row {
+    background-color: pink;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: inherit;
+
+
+}
+
